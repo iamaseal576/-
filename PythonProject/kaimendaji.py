@@ -611,8 +611,8 @@ class DoorGameGUI:
         )
         self.continue_btn.config(state='disabled')
         self.play_status_label.config(text="🎉 已通关所有门！", foreground="#2E86C1")
-        if messagebox.askyesno("通关", "是否返回主界面？"):
-            self.quit_game()
+        
+        self.quit_game()
 
 
 def main():
@@ -625,4 +625,5 @@ def main():
 
     app = DoorGameGUI(root)
     root.mainloop()
+
 
